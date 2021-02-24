@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "project",
+      "type": "java.lang.String",
+      "description": "Description for project."
+    },
+    {
+      "name": "log-conf.log-keep-days",
+      "type": "java.lang.String",
+      "description": "Description for log-conf.log-keep-days."
+    }
+  ] }

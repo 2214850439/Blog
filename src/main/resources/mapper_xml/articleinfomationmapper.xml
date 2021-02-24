@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.svjk.blog.mapper.ArticleInformationMapper">
+    <!--访客进入首页所显示的所有博客文章-->
+    <select id="queryarticle" resultType="com.svjk.blog.pojo.article_info">
+        select * from article_info
+    </select>
+    <!--根据文章类型去查询文章类型名称-->
+    <select id="queryArticleType" parameterType="int" resultType="String">
+        select name from article_type where type=#{type}
+    </select>
+</mapper>
